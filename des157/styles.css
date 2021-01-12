@@ -1,0 +1,46 @@
+body {
+    background-color: whitesmoke;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    width: 800px;
+    padding: 5% 0% 0% 18%;
+}
+.myBanner {
+    width: 800px;
+    height: 250px;
+    background: linear-gradient(-90deg,var(--c1,#91AC9A), var(--c2,#8FB8CA), var(--c1,#91AC9A)) var(--x,0)/ 200%;
+    --c1:  #91AC9A;
+    --c2: #8FB8CA;
+    transition: .5s;
+}
+.myBanner:hover { --x: 100%; }
+
+
+section {
+    border-radius: 8px;
+    margin: auto;
+    align-items: flex-start;
+    line-height: 1.5;
+   
+}
+main {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+a {
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+footer {
+    padding-top: 5%;
+    padding-bottom: 10%;
+    margin: auto;
+    text-align: center;
+}
+
+/* TODO: figure out alignment, make cover photo and animations, clean up design and finalize color scheme, implement nested sections(?)*/
