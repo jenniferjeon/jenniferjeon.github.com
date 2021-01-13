@@ -1,36 +1,60 @@
 body {
+    min-width: 800px;
+    max-width: 1200px;
     background-color: whitesmoke;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-    width: 800px;
-    padding: 5% 0% 0% 18%;
+    padding-top: 7%;
+    padding-left: 15%;
+    padding-right: 15%;
+    line-height: 1.5em;
+    
 }
 .myBanner {
+    justify-content: self;
     width: 800px;
     height: 250px;
-    background: linear-gradient(-90deg,var(--c1,#91AC9A), var(--c2,#8FB8CA), var(--c1,#91AC9A)) var(--x,0)/ 200%;
-    --c1:  #91AC9A;
-    --c2: #8FB8CA;
-    transition: .5s;
+    background: linear-gradient(-90deg,var(--x1,#91AC9A), var(--x2,#8FB8CA), var(--x1,#91AC9A)) var(--x,0)/ 200%;
+    --x1:  #91AC9A;
+    --x2: #8FB8CA;
+    transition: .3s;
 }
 .myBanner:hover { --x: 100%; }
 
 
-section {
+/* section 
     border-radius: 8px;
     margin: auto;
-    align-items: flex-start;
-    line-height: 1.5;
-   
-}
+    align-items: center;
+    justify-items: center;
+    line-height: 1.5em;
+  
+
+} */
 main {
-    flex-wrap: wrap;
     display: flex;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
 }
+#column {
+    max-width: 800px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 1.6em;
+    margin: auto;
+    align-items: center;
+    vertical-align: center;
+}
+
 a {
     text-decoration: none;
+    color: slategrey;
+}
+a:hover {
+    transition: 0.2 ease-in;
+    color: #e6c3bf;
 }
 
 ul{
@@ -43,4 +67,4 @@ footer {
     text-align: center;
 }
 
-/* TODO: figure out alignment, make cover photo and animations, clean up design and finalize color scheme, implement nested sections(?)*/
+/* TODO: figure out alignment*/
