@@ -18,6 +18,7 @@ body {
     --x1:  #91AC9A;
     --x2: #8FB8CA;
     transition: .3s;
+
 }
 .myBanner:hover { --x: 100%; }
 

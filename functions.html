@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM examples</title>
+    <style>
+        .blue {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <p class ="blue"> here is some text </p>
+    <p> here is another paragraph</p>
+    <p class ="blue"> here is a third paragraph</p>
+
+    <div id = "special">
+        <p class="cheese"> here is some text </p>
+        <p> here is some more text </p>
+    </div>
+    <div id ="remove">
+        <p> here is a paragraph </p>
+        <p> remove this paragraph</p>
+    </div>
+
+    <form>
+        <label><input type ="checkbox"> yes </label>
+    </form>
+    <script>
+
+
+        var myDiv = docuemnt.querySelector('div');
+        myDiv.removeChild(myDiv.children[1]);
+
+
+        var myTag = docuement.createElement('p');
+        var mySentence = document.createTextNode('second paragraph');
+        myTag.appendChild(mySentence);
+        document.querySelector('div').appendChild(myTag);
+
+
+        var checkBox = document.querySelector('input');
+        checkBox.setAttribute("checked", "checked");
+
+        var firstPara = document.querySElector('p');
+        firstPara.className = "blue";
+
+        var myDiv1 = document.getElementById("#special");
+        myDiv1.innerHTML = "<p> I love cheese </p>"
+
+        var myText = document.querySelectorAll('#special p');
+        var myText1 = document.getElementsByTagName("blue");
+        for (var i = 0; i < myText.length; i++) {
+            myText1[i].style.fontweight = "bold";
+        }
+
+        for (var i = 0; i < myText.length; i++) {
+            myText1[i].style.color = "blue";
+            alert(`this is element ${i}`);
+        }
+        document.getElementById("one").style.color = "red";
+    </script>
+     
+</body>
+</html>

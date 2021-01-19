@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> loop examples </title>
+</head>
+<body>
+
+    <h1> Loop Examples </h1>
+
+    <script> 
+        for (var i = 0; i<10; i++) {
+            console.log(i + '\n');
+        }
+
+        var colors = ['red', 'blue', 'yellow', 'green'];
+        for (var i = 0; i<4;i++){
+            console.log(colors[i] + '\n');
+        }
+        for (var i = 0; colors.length; i++) {
+            console.log(colors[i] + '\n');
+        }
+        var food = ['grapes', 'cheese', 'bread', 'olives'];
+        for (var eachItem of food) {
+            console.log(eachItem);
+        }
+
+        var statement = "a string can be treated like an array";
+        for (var i = 0; i < statement.length; i++) {
+            console.log( statement[i] + '\n');
+        }
+
+        var incrementor = 0;
+        var text = "";
+
+        while (incrementor < 10) {
+            text+= 'The incrementor has gone up to ${incrementor} \n';
+            incrementor++;
+        }
+        console.log(text);
+
+        var i = 0;
+        var text = "";
+
+        while (i < 10) {
+            text+= 'The incrementor is ${i}, and squared it is ${i * i} \n';
+            i++;
+        }
+        console.log(text);
+
+
+
+    
+    
+    
+    </script>
+</body>
+</html>

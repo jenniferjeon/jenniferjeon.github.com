@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> dom experiment</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <h1> dom experiment </h1>
+    <hr>
+
+    <script>
+    // this script tells you how many duplicate letters are in your name
+    // and recommends a random ice cream flavor.
+        function enterName() {
+            var user_name = prompt("Please enter your name: ", " ");
+            return user_name;
+
+        }
+
+        function duplicateLetter(user_name) {
+            var frequency = {};
+            for (var i = 0;i < user_name.length;i++) {
+                var char = user_name.charAt(i);
+                if(frequency[char]) {
+                    frequency[char]++;
+                }
+                else {
+                    frequency[char] = 1;
+                }
+            }
+            return frequency;
+        }
+        function random(min,max) {
+            return Math.floor(Math.random() * (max - min) ) + min;
+        }
+        
+
+    </script>
+
+    <script>
+        var ice_cream = ['matcha', 'vanilla', 'chocolate', 'strawberry'];
+        user_name = enterName();
+        duplicateLetter(user_name);
+        console.log("here are the dupliate letters in your name: \n");
+        console.log(duplicateLetter(user_name));
+        console.log(`you should get ${ice_cream[random(0,ice_cream.length -1)]} ice cream!\n`);
+
+    </script>
+    
+</body>
+</html>
