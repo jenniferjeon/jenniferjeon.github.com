@@ -16,6 +16,9 @@
     // and recommends a random ice cream flavor.
         function enterName() {
             var user_name = prompt("Please enter your name: ", " ");
+            while (user_name == null || user_name == "" || user_name == " ") {
+                user_name = prompt("error! please enter a valid name","");
+            }
             return user_name;
 
         }

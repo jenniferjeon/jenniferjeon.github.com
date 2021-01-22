@@ -1,0 +1,47 @@
+body {
+    max-width: 900px;
+    font-family: 'Open Sans', sans-serif;
+    margin: auto;
+    padding: 5% 10% 2% 20%;
+    background-color: rgb(248,248,255);
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 65px;
+    font-weight: 700;
+    color: #506369;
+    padding-bottom: 0px;
+}
+#backbutton {
+    color: #e6c3bf;
+    padding-bottom: 50%;
+
+}
+
+.title {
+   color: #7f948f; 
+   font-weight: 600;
+}
+.date {
+    font-size: 14px;
+    font-weight: 300;
+    color: lightgray;
+}
+.entry {
+    line-height: 1.5;
+    margin: auto;
+
+}
+a {
+    text-decoration: none;
+    color: #c28285;
+}
+footer {
+    text-align: center;
+    margin: auto;
+    padding: 25px;
+}
+footer a {
+    color: #506369;
+}
