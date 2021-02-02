@@ -1,0 +1,96 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+    max-width: 1440px;
+    max-height: 1024px;
+    padding: 5% 2% 2% 8%;
+    position: relative;
+    background-image: url("images/background1.svg");
+    background-color: #121212;
+    background-repeat: no-repeat;
+    background-size: auto;
+    overflow: scroll;
+    
+}
+
+main {
+    margin: 10%;
+    text-align: left;
+}
+/* form styling */
+#box {
+    border-radius: 40px;
+    background: #181758;
+    position: absolute;
+    right: 60px;
+    top: 200px;
+    width: 400px;
+    height: 550px;
+    padding: 3% 2% 2% 5%;
+    
+} 
+/*
+* {
+    box-sizing: border-box;
+   padding: 2%;
+
+}
+*/
+label {
+    display: flex;
+    line-height: 15px;
+    margin-bottom: 10px;
+    color: gray;
+}
+input {
+    width: 80%;
+    display: block;
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    outline: none;
+    background-color: #D2F4FF;
+}
+input:focus{
+    background-color: rgb(121, 195, 219);
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 56px;
+    color: #FAAF3E;
+    margin: auto;
+    padding-bottom: 10px;
+}
+#submit-button {
+    padding: 15px;
+    background-color: #03D155;
+    width: 80%;
+    align-self: center;
+}
+footer {
+    padding: 10px;
+}
+
+#overlay {
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#overlay article {
+    box-sizing: border-box;
+    background-color:#fff;
+    padding: 20px;
+    width: 50vw;
+    height: 80vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -2,8 +2,8 @@
 
     'use strict';
 
-    const myForm = document.querySelector('#myForm');
-    const madlib = document.querySelector('#madlib');
+    var myForm = document.querySelector('#myForm');
+    var madlib = document.querySelector('#madlib');
 
 
     myForm.addEventListener('submit', function(event) {

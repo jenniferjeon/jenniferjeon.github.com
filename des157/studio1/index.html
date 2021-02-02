@@ -4,41 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> Build Mad Lib Script </title>
+    <link href=styles.css rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+    <title> Rejection Letter Generator </title>
     <script src="script.js" defer></script>
+    
 </head>
 <body>
     <header>
-        <h1> Build a Mad Lab Script </h1>
+        <h1> Rejection Letter Generator </h1>
+
     </header>
     <main>
+        <section id="box">
         <form id="myForm"> 
             <article id="madlib">
 
                 <label for="name"> Provide your name </label>
-                <input type="text" id="name">
+                <input type="text" id="name" required>
 
                 <label for="job"> Provide your job </label>
-                <input type="text" id="job">
+                <input type="text" id="job" required>
 
 
                 <label for="adverb"> Provide an adverb</label>
-                <input type="text" id="adverb">  
+                <input type="text" id="adverb" required>  
 
                 <label for="adjective1"> Provide an adjective</label>
-                <input type="text" id="adjective1">
+                <input type="text" id="adjective1" required>
 
                 <label for="adjective2"> Provide another adjective</label>
-                <input type="text" id="adjective2">
+                <input type="text" id="adjective2" required>
 
-                <label for="company"> Provide an compay name</label>
-                <input type="text" id="company">
+                <label for="company"> Provide an company name</label>
+                <input type="text" id="company" required>
 
-                <input type="submit" value="send">
+                <input type="submit" value="Generate My Rejection!" id="submit-button">
     
             </article>
 
         </form>
+        </section>
     </main>
     <footer>
 
