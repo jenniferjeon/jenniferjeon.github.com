@@ -104,10 +104,17 @@ input[type=reset] {
 }
 footer {
     padding: 10px;
-    padding-top: 30%;
+    padding-top: 25%;
     padding-bottom: 10%;
     margin: auto;
     text-decoration: none;
+}
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color:#181758;
 }
 
 
@@ -115,10 +122,16 @@ footer {
 
 .output {
     color: gray;
-    padding-top: 15px;
+    padding-top: 72px;
     margin: auto;
     text-align: left;
     line-height: 2em;
 
 
+}
+#error {
+    padding-top: 15px;
+    margin: auto;
+    text-align: left;
+    line-height: 2em;
 }

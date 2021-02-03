@@ -30,7 +30,7 @@
         else {
             let myText = "Please enter the correct words so that I can reject you properly";
             madlib.innerHTML = myText;
-            madlib.className = "error";
+            
         }
 
       //  const formData = document.querySelectorAll("input[type=text]");
