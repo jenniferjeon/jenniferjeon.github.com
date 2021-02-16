@@ -1,0 +1,141 @@
+body {
+    background: #E8EDFF;
+    overflow: scroll;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+  
+}
+h1 {
+    text-align: center;
+    font-size: 45px;
+    color: #35129A;
+    font-weight: 700;
+}
+
+.closet-container {
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    width: 1440px;
+    height: 1024px;
+    display:flex;
+    
+}
+
+.rack {
+    position: absolute;
+    background-color: #C4C4C4;
+    width: 1900px;
+    height:40px;    
+    top: 50px;
+    z-index: -1;
+}
+.hanger {
+    width: 300px;
+    height: 150px;
+}
+
+#outfit1 .hanger {
+    position:absolute;
+    left: 50px;
+    top: 15px;
+}
+
+#outfit1 .cloth{
+    position: absolute;
+    left: 0px;
+    top: 130px;
+    
+}
+#outfit2 .hanger {
+    position: absolute;
+    top: 15px;
+    left: 350px;
+}
+#outfit2 .cloth{
+    position: absolute;
+    left: 330px;
+    top: 130px;
+}
+#outfit3 .hanger {
+    position: absolute;
+    top: 15px;
+    left: 700px;
+}
+#outfit3 .cloth{
+    position: absolute;
+    left: 700px;
+    top: 130px;
+    
+}
+#outfit4 .hanger {
+    position: absolute;
+    top: 15px;
+    left: 1050px;
+}
+#outfit4 .cloth{
+    position: absolute;
+    left: 1050px;
+    top: 130px;
+}
+
+.cloth:hover {
+    animation: shake 0.8s;
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-5deg); }
+    20% { transform: translate(-3px, 0px) rotate(5deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+  /* overlay styling */
+.hidden {
+    display: none;
+}
+.showing {
+    display: block;
+}
+/*.overlay {
+    position: absolute;
+    width: 1800px;
+    height: 1150px;
+    top: 0px;
+    left: 0;
+    display: none;
+       
+} */
+.overlay {
+    background-color: rgb(0,0,0,0.5);
+}
+.overlay section {
+    position: absolute;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: #fff;
+    padding:20px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display:none;
+}
+.overlay img {
+    width: 250px;
+    height: 350px;
+    float: left;
+    padding: 15px;
+}
+.overlay h2 {
+    padding: 8px;
+    font-size: 32px;
+}
+.overlay p {
+    line-height: 1.9em;
+    margin: auto;
+    padding: 10px;
+    font-size: 20px;
+}
