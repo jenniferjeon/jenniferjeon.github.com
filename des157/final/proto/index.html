@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go-Stop</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:weight@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id= "grid">
+        <section id="instructions">
+            <h1>Go-stop</h1>
+            <h2> 고스톱 </h2>
+            <p>There are two players. The player whose turn it is will draw a card, which has a specific numeric value. 
+                The value of the card is added to the current player's score, unless either card comes up as a "one". If this happens, 
+                this player's turn is over, and it is the other player’s turn. After each card draw, the current player can either draw the card again, 
+                (assuming a "one" was not drawn) or if the current player feels that luck is running thin, they can pass to the other player. 
+                The first player to get 30 points or higher wins.</p> 
+            <p>Oh, and if you draw two "ones" (snake eyes), your current score gets zeroed out. So don’t do that.</p>
+  
+
+        </section>
+    <section id="game-board">
+        <div id="gamecontrol">
+
+            <button id="startgame">Randomly Pick the First Player, and Start the Game</button>
+        </div>
+
+        <div id="game"></div>
+        <div id="actions"></div>
+        <div id="score"></div>
+    </section>
+    </div>
+    <footer>
+        <a href ="sounds.html"> Sounds Credit</a>
+        <a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
+    </footer>
+
+    
+    <script src=script.js></script>
+</body>
+</html>
