@@ -1,0 +1,234 @@
+body {
+    font-family: 'Noto Serif KR', serif;
+    background-color: #0A3C02;
+    line-height: 1.5em;
+    color: white;
+    position: relative;
+    width: 1366px;
+    height: 768px;
+    overflow: scroll;
+}
+
+button { 
+    padding: 15px;
+    line-height: 1.2em;
+    text-align: center;
+    border-radius: 20px;
+    border: none;
+}
+
+
+/*
+#gamecontrol, #score {
+    background-color: aliceblue;
+} */
+/* #instructions {
+    
+    left: 0;
+    top: 0;
+    padding: 15px;
+    width: 500px;
+    background-color: #29335C;
+    height: 100%;
+    float: left;
+
+} */
+#instructions h1, h2 {
+    text-align: center;
+}
+#instructions p {
+    padding: 15px;
+    line-height: 1.9em;
+}
+#game-board {
+    height: 100vh;
+    width: 100%;
+}
+
+
+#game {
+    /* background-color:#eaeaea; */
+    justify-content: center;
+    align-items: center;
+    margin-left: 500px;
+    padding: 30px;
+    
+  
+} 
+#game p {
+    margin: 30px;
+    margin-top: 0;
+    padding: 20px;
+}
+#game img {
+    /* display: flex; */
+    
+    max-width: 129px;
+    max-height: 175px;
+ 
+}
+
+#gamecontrol {
+    /* margin-top: 30px; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#startgame{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    top: 200px;
+    left: 650px;
+
+}
+#quit {
+    width: 125px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #941A1D;
+    color: whitesmoke;
+
+}
+
+
+#actions {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    padding: 30px;
+
+}
+#actions button {
+    margin: 8px;
+
+}
+
+#score {
+    margin: auto;
+    position: absolute;
+    top: 570px;
+    left: 590px;
+    text-align: center;
+
+
+    padding: 5px;
+}
+footer {
+    padding-top: 50px;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+
+}
+footer a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+/* overlay styling */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background: rgba(0,0,0,0.5);
+
+
+}
+.overlay div {
+    margin-top: 80px;
+    margin-left: 70px;
+
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;  
+}
+.showing {
+    visibility: visible;
+}
+#intro {
+    background: #DFB056;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 50px;
+    width: 550px;
+    height: 300px;
+    left: 350px;
+    top: 100px;
+    border-radius: 63px;
+    z-index: 2;
+}
+#instructions {
+    background: #DFB056;
+    position: absolute;
+    margin-left: 80px;
+    width: 900px;
+    height: 600px;
+    left: 230px;
+    overflow: scroll;
+    align-content: center;
+
+}
+
+#instructions p {
+    width: 80%;
+}
+
+/* dark background of overlay */
+#dark {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    align-content: center;
+    background-color: #000;
+    opacity: 0.4;
+    z-index: 1;
+
+}
+#intro h1 {
+    text-align: center;
+    margin: auto;
+    margin-right: 30px;
+    color: #000;
+    font-size: 48px;
+}
+#intro h2 {
+    margin-right: 30px;
+    color: #000;
+    font-size: 28px;
+    padding-bottom: 15px;
+}
+#intro button {
+    margin-left: 56px;
+}
+.play-btn {
+    background-color: #86A1C0;
+    color: whitesmoke;
+    margin: auto;
+    width: 100px;
+    cursor: pointer;
+    z-index: 2;
+}
+.instructions-btn {
+    background-color: whitesmoke;
+    color: #86A1C0;
+    width: 150px;
+    z-index: 2;
+    cursor: pointer;
+}

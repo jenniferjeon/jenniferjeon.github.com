@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go-Stop</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- TODO: (there is a lot to be done excuse my mess hehe)
+    1. code game platform
+    2. style overlays
+    3. incorporate go-stop rules into JS
+    -->
+<!-- intro overlay -->
+    <div id="dark"></div>
+    <section id="intro" class="overlay showing">
+        <div>
+            <h1>Go-stop</h1>
+            <h2> 고스톱 </h2>
+            <button class="instructions-btn"> Learn More </button>
+            <button class="play-btn"> Play</button>
+        </div>
+    </section>
+
+<!-- when user clicks "instructions, this is what shows up-->
+    <section id="instructions" class="overlay hidden">
+        <div>
+            <h1> What is Go-Stop?</h1>
+            <p>Go-stop is a traditional Korean card game that has been played for many generations, played with the <i> hanafuda</i> card deck. It's usually
+            played during family gatherings or traditional holidays. It's so popular that gambling with 
+            this game was declared illegal at one point. This is a very modified, simplified version of the game. </p>
+            
+            <h3>Traditional Play </h3>
+            <p>
+            The goal of the game is to capture cards that have the same "month", which are denoted
+            by common themes in the design of the card.The way the game is played traditionally, in each turn, the players try to match one of the six cards lying face-up on the table with 
+            the card of the same "month" in their dealt hands. If they have no matching cards,
+            they must give up a card, and if they have four cards from the same month, you automatically win the game. The turn continues with the player flipping
+            over the top card from the draw pile to look for a card with the same month and to collect matching cards and consequently
+            show your opponents. Players can also capture cards during their turn. The game ends when
+            cards run out or until a player has enough points, which is usually predetermined before the start of the game.
+            </p>
+            <p> Special rules can also be in play! What's unique about this game is that although it is played
+                very similarly like poker, the rules can vary by family or region. For example, with my family in Seoul, we play with the Joker card, which
+                can add points to certain combinations. 
+
+            </p>
+            <h3> Instructions </h3>
+            <p>
+            There are two players. The player whose turn it is will draw a card, which has a specific numeric value. 
+            The value of the card is added to the current player's score, unless either card comes up as a junk card. If this happens, 
+            this player's turn is over, and it is the other player’s turn. After each card draw, the current player can either draw another card, or <i>go</i> 
+            (assuming a junk card not drawn) or if the current player feels that luck is running thin, they can pass to the other player, or <i> stop</i>. 
+            The first player to get 30 points or higher wins.</p> 
+            <p> The values of the cards are as follows: </p>
+
+            <p>Animal (끗): 20 points </p>
+            <img src="images/animal1.svg">
+            <br>
+            <p> Bright (광): 10 points </p>
+            <img src ="images/bright1.svg">
+            <img src="images/bright2.svg">
+            <br>
+            <p> Junk (피): 5 points</p>
+            <img src="images/junk1.svg">
+            <img src="images/junk2.svg">
+            <img src="images/junk3.svg">
+            <img src="images/junk4.svg">
+            <img src="images/junk5.svg">
+            <br>
+            <br>
+            <button class="play-btn"> Play! </button>
+
+        </div>
+    </section>
+  
+ 
+    <section id="game-board">
+        <div id="gamecontrol">
+            <button id="startgame">Randomly Pick the First Player, and Start the Game</button>
+        </div>
+
+        <div id="game"></div>
+        <div id="actions"></div>
+        <div id="score"></div>
+    </section>
+
+    <footer>
+        <a href ="sounds.html"> Sounds Credit</a>
+        <a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
+    </footer>
+
+    
+    <script src=script.js></script>
+</body>
+</html>
