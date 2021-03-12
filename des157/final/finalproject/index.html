@@ -52,25 +52,25 @@
             <h3> Instructions </h3>
             <p>
             There are two players. The player whose turn it is will draw a card, which has a specific numeric value. 
-            The value of the card is added to the current player's score, unless either card comes up as a junk card. If this happens, 
+            The value of the card is added to the current player's score, unless the player draws two of the same card. If this happens, 
             this player's turn is over, and it is the other player’s turn. After each card draw, the current player can either draw another card, or <i>go</i> 
             (assuming a junk card not drawn) or if the current player feels that luck is running thin, they can pass to the other player, or <i> stop</i>. 
-            The first player to get 30 points or higher wins.</p> 
+            The first player to get 50 points or higher wins.</p> 
             <p> The values of the cards are as follows: </p>
 
             <p>Animal (끗): 20 points </p>
-            <img src="images/animal1.svg">
+            <img src="images/animal1.svg" alt="animal1">
             <br>
             <p> Bright (광): 10 points </p>
-            <img src ="images/bright1.svg">
-            <img src="images/bright2.svg">
+            <img src ="images/bright1.svg" alt="bright1">
+            <img src="images/bright2.svg" alt="bright2">
             <br>
             <p> Junk (피): 5 points</p>
-            <img src="images/junk1.svg">
-            <img src="images/junk2.svg">
-            <img src="images/junk3.svg">
-            <img src="images/junk4.svg">
-            <img src="images/junk5.svg">
+            <img src="images/junk1.svg" alt="junk1">
+            <img src="images/junk2.svg" alt="junk2">
+            <img src="images/junk3.svg" alt="junk3">
+            <img src="images/junk4.svg" alt="junk4">
+            <img src="images/junk5.svg" alt="junk5">
             <br>
             <br>
             <button class="play-btn"> Play! </button>
@@ -86,6 +86,7 @@
 
         <div id="game"></div>
         <div id="actions"></div>
+ 
         <div id="score"></div>
     </section>
 

@@ -21,60 +21,10 @@
         roll2: 0,
         rollSum: 0,
         index: 0,
-        gameEnd: 29
+        gameEnd: 49
 
     };
 
-    /* const cardArray = [
-        {
-            image: 'images/bright1.svg',
-            value: 10,
-            name: "bright1"
-        },
-        {
-            image: 'images/bright2.svg',
-            value: 10,
-            name: "bright1"
-        },
-        {
-            image: 'images/animal1.svg',
-            value: 20,
-            name: "animal1"
-        },
-        {
-            image: 'images/junk1.svg',
-            value: 1,
-            name: "junk1"
-        },
-        {
-            image: 'images/junk2.svg',
-            value: 1,
-            name: "junk2"
-        },
-        {
-            image: 'images/junk3.svg',
-            value: 1,
-            name: "junk1"
-        },
-        {
-            image: 'images/junk4.svg',
-            value: 1,
-            name: "junk4"
-        },
-        {
-            image: 'images/junk5.svg',
-            value: 1,
-            name: "junk5"
-        },
-        {
-            image: 'images/junk6.svg',
-            value: 1,
-            name: "junk6"
-        },
-    ]
-   var cardScore = cardArray.value;
-   
-    /* set up */
 
     /* when user presses, play, overlay is hidden and game commences */
     playbtn.forEach(function(btn) {
@@ -114,6 +64,7 @@
         gameControl.innerHTML = '<h2></h2>'
         gameControl.innerHTML += '<button id="quit"> Wanna Quit?</button>';
 
+
         document.getElementById('quit').addEventListener('click', function(){
             location.reload();
         });
@@ -137,10 +88,19 @@
         actionArea.innerHTML = '';
         gameData.roll1 = Math.floor(Math.random() * 6) + 1;
         gameData.roll2 = Math.floor(Math.random() * 6) + 1;
+        if (gameData.roll1 <2 || gameData.roll2 < 2) {
+            gameData.rollSum += 10;
+        }
+        else if (gameData.roll1 == 3 || gameData.roll2 == 3) {
+            gameData.rollSum += 20;
+        }
+        else {
+            gameData.rollSum += 5;
+        }
         game.innterHTML = `<p>Draw a card for the ${gameData.players[gameData.index]}</p>`;
 
         game.innerHTML += `<img src="${gameData.cards[gameData.roll1-1]}"> <img src="${gameData.cards[gameData.roll2-1]}">`;
-        gameData.rollSum = gameData.roll1 + gameData.roll2;
+        //gameData.rollSum = gameData.roll1 + gameData.roll2;
 
         
     
@@ -152,14 +112,14 @@
 
             setTimeout(setUpTurn,2000);
             checkWinningCondition();
-            console.log("snake eyes were rolled");
+          
         }
-    // if either die is a 1
-        else if(gameData.roll1 === 1 || gameData.roll2 === 1) {
+    // if two of the same card are drawn
+       else if(gameData.roll1 ===  gameData.roll2) {
             gameData.index ? (gameData.index = 0) : (gameData.index = 1);
-            game.innerHTML += `<p> sorry, one of your cards was a one, switching to ${gameData.players[gameData.index]}</p>`;
+            game.innerHTML += `<p> Sorry, you drew double cards, switching to ${gameData.players[gameData.index]}</p>`;
             setTimeout(setUpTurn, 2000);
-            console.log("one of the two cards was a 1");
+           // console.log("one of the two cards was a 1"); 
 
         }
         else { 
