@@ -150,7 +150,7 @@ footer a {
     visibility: visible;
 }
 #intro {
-    background: #DFB056;
+    background: #CC9907;
     position: absolute;
     margin-top: 40px;
     margin-left: 50px;
@@ -162,7 +162,7 @@ footer a {
     z-index: 2;
 }
 #instructions {
-    background: #DFB056;
+    background: #CC9907;
     position: absolute;
     margin-left: 80px;
     width: 900px;
